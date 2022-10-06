@@ -3,16 +3,17 @@ const bodyParser = require('body-parser');
 const {Sequelize, DataTypes} = require("sequelize");
 const app = express();
 const Joi = require('joi');
+const config = require("config.json")
 
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 
-const sequelize = new Sequelize('api-example', 'api', 'NoPOdA2e8Afa', {
+const sequelize = new Sequelize(config.database, config.user, config.password, {
     dialect: 'mysql',
-    host: "mehmetcankaplan.com",
-    port: 3331
+    host: config.host,
+    port: config.port
 });
 
 sequelize.authenticate().then(r => console.log("Connection has been established successfully.")).catch(err => console.log(err, "err"));
