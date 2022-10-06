@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const {Sequelize, DataTypes} = require("sequelize");
 const app = express();
 const Joi = require('joi');
-const config = require("config.json")
+const config = require("./config.json")
 
 app.use(express.json());
 app.use(bodyParser.json());
