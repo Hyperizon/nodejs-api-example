@@ -15,7 +15,7 @@
 
 
 ### Glad to see you here!  
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  
+This is a Node.js API example project that demonstrates how to create a RESTful API with Express.js and MySQL database. The project uses Sequelize ORM to interact with the MySQL database and Joi library for validation. It implements CRUD (Create, Read, Update, Delete) operations for a sample "users" resource. The project includes basic authentication and authorization using JSON Web Tokens (JWT).  
   
 
 <br/>  
